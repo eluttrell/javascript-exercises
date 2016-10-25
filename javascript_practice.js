@@ -138,9 +138,9 @@
 // var printBox = function(height, width) {
 //   var row = "";
 //   var nextRow = "";
-//   for (var i = 0; i < width; i++) {
-//     row += "*";
-//   }
+  // for (var i = 0; i < width; i++) {
+  //   row += "*";
+  // }
 //   for (var k = 0; k < width; k++) {
 //     if (k === 0 || k === width - 1) {
 //       nextRow += "*";
@@ -157,3 +157,30 @@
 //     }
 //   }
 // };
+
+// Print a Banner
+// var printBanner = function(string) {
+//   var topBottom = "";
+//   var middle = "";
+//   for (var i = 0; i < string.length + 2; i++) {
+//     topBottom += "*";
+//   }
+//   for (var j = 0; j < 3; j++) {
+//     if (j === 0 || j === 2) {
+//       middle += "*";
+//     }
+//     else {
+//       middle += string;
+//     }
+//   }
+//   for (var k = 0; k < 3; k++) {
+//     if (k === 0 || k === 2) {
+//       console.log(topBottom);
+//     }
+//     else {
+//       console.log(middle);
+//     }
+//   }
+// };
+//
+// printBanner('DigitalCrafts!');
