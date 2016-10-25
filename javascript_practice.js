@@ -98,12 +98,37 @@
 
 // Print a Square
 
+// var printSquare = function(size) {
+  // var row = "";
+  // for (var i = 0; i < size; i++) {
+  //   row += "*";
+  // }
+  // for (var j = 0; j < size; j++) {
+  //   console.log(row);
+  // }
+// };
+
+// Print a box
+
 // var printBox = function(size) {
-//   var row = "";
 //   for (var i = 0; i < size; i++) {
-//     row += "*";
-//   }
-//   for (var j = 0; j < size; j++) {
-//     console.log(row);
+//     if (i < 1 || i === size - 1) {
+//       var row = "";
+//       for (var j = 0; j < size; j++) {
+//         row += "*";
+//       }
+//       console.log(row);
+//     }
+//     else if (i > 0 && i < size) {
+//       var nextRow = "";
+//       for (var k = 0; k < size; k++) {
+//         if (k === 0 || k === size - 1) {
+//           nextRow += "*";
+//         }
+//         else
+//           nextRow += " ";
+//       }
+//       console.log(nextRow);
+//     }
 //   }
 // };
