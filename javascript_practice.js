@@ -65,17 +65,33 @@
 
 // Tip Calculator 3
 
-var splitAmount = function(amount, service, partyof) {
-  if (service === 'good') {
-    bill = (amount * 1.2) / partyof;
-    return "$" + bill.toFixed(2);
-  }
-  else if (service === 'fair') {
-    bill = (amount * 1.15) / partyof;
-    return "$" + bill.toFixed(2);
-  }
-  else if (service === 'bad') {
-    bill = (amount * 1.1) / partyof;
-    return "$" + bill.toFixed(2);
-  }
-};
+// var splitAmount = function(amount, service, partyof) {
+//   if (service === 'good') {
+//     bill = (amount * 1.2) / partyof;
+//     return "$" + bill.toFixed(2);
+//   }
+//   else if (service === 'fair') {
+//     bill = (amount * 1.15) / partyof;
+//     return "$" + bill.toFixed(2);
+//   }
+//   else if (service === 'bad') {
+//     bill = (amount * 1.1) / partyof;
+//     return "$" + bill.toFixed(2);
+//   }
+// };
+
+// Print Numbers
+
+// For Loop Version:
+// var printNumbersFor = function(x, y) {
+//   for (var count = x; count <= y; count ++)
+//     console.log(count);
+// };
+
+// While Loop Version:
+// var printNumbersWhile = function(x, y) {
+//   while (x <= y) {
+//     console.log(x);
+//     x ++;
+//   }
+// };
