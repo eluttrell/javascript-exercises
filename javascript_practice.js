@@ -47,3 +47,20 @@
 // };
 
 // Tip Calculator 2
+
+// var tipAmount = function(amount, service) {
+//   if (service === 'good') {
+//     bill = amount * 1.2;
+//     return bill.toFixed(2);
+//   }
+//   else if (service === 'fair') {
+//     bill = amount * 1.15;
+//     return bill.toFixed(2);
+//   }
+//   else if (service === 'bad') {
+//     bill = amount * 1.1;
+//     return bill.toFixed(2);
+//   }
+// };
+
+// Tip Calculator 3
