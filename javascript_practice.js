@@ -2,6 +2,8 @@
 
 // console.log("Hello, world!");
 
+// ===========================================================
+
 // Hello You!
 
 // var hello = function(name) {
@@ -9,6 +11,8 @@
 // };
 //
 // hello('Moustache');
+
+// ===========================================================
 
 // Hello You2!
 
@@ -21,6 +25,8 @@
 //
 // hello();
 
+// ===========================================================
+
 // Madlib
 
 // var madlib = function(name, subject) {
@@ -28,6 +34,8 @@
 // };
 //
 // madlib('Elijah', 'Drafting');
+
+// ===========================================================
 
 // Tip Calculator
 
@@ -46,6 +54,8 @@
 //   }
 // };
 
+// ===========================================================
+
 // Tip Calculator 2
 
 // var totalAmount = function(amount, service) {
@@ -62,6 +72,8 @@
 //     return bill.toFixed(2);
 //   }
 // };
+
+// ===========================================================
 
 // Tip Calculator 3
 
@@ -80,6 +92,8 @@
 //   }
 // };
 
+// ===========================================================
+
 // Print Numbers
 
 // For Loop Version:
@@ -96,6 +110,8 @@
 //   }
 // };
 
+// ===========================================================
+
 // Print a Square
 
 // var printSquare = function(size) {
@@ -107,6 +123,8 @@
   //   console.log(row);
   // }
 // };
+
+// ===========================================================
 
 // Print a box
 
@@ -134,6 +152,8 @@
 //   }
 // };
 
+// ===========================================================
+
 // Height/Width Version
 // var printBox = function(height, width) {
 //   var row = "";
@@ -157,6 +177,8 @@
 //     }
 //   }
 // };
+
+// ===========================================================
 
 // Print a Banner
 // var printBanner = function(string) {
@@ -182,5 +204,29 @@
 //     }
 //   }
 // };
-//
 // printBanner('DigitalCrafts!');
+
+// ===========================================================
+
+// Factor a Number
+
+// Version 1:
+// var factors = function(num) {
+//   var allFactors = [];
+//   for (var i = 0; i <= Math.sqrt(num); i++) {
+//     var factors1 = "";
+//     var factors2 = "";
+//     var y = num / i;
+//     if (Number.isInteger(y) === true) {
+//       factors1 += String(y);
+//       allFactors += factors1 + "  ";
+//       factors2 += String(i);
+//       allFactors += factors2 + "  ";
+//     }
+//   }
+//   console.log(allFactors);
+// };
+//
+// factors(25);
+
+// Version 2:
