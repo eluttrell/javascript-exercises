@@ -95,3 +95,15 @@
 //     x ++;
 //   }
 // };
+
+// Print a Square
+
+// var printBox = function(size) {
+//   var row = "";
+//   for (var i = 0; i < size; i++) {
+//     row += "*";
+//   }
+//   for (var j = 0; j < size; j++) {
+//     console.log(row);
+//   }
+// };
