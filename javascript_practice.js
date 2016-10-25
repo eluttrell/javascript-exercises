@@ -110,6 +110,7 @@
 
 // Print a box
 
+// Just Size Version:
 // var printBox = function(size) {
 //   for (var i = 0; i < size; i++) {
 //     if (i < 1 || i === size - 1) {
@@ -121,13 +122,37 @@
 //     }
 //     else if (i > 0 && i < size) {
 //       var nextRow = "";
-//       for (var k = 0; k < size; k++) {
-//         if (k === 0 || k === size - 1) {
-//           nextRow += "*";
-//         }
-//         else
-//           nextRow += " ";
-//       }
+      // for (var k = 0; k < size; k++) {
+      //   if (k === 0 || k === size - 1) {
+      //     nextRow += "*";
+      //   }
+      //   else
+      //     nextRow += " ";
+      // }
+//       console.log(nextRow);
+//     }
+//   }
+// };
+
+// Height/Width Version
+// var printBox = function(height, width) {
+//   var row = "";
+//   var nextRow = "";
+//   for (var i = 0; i < width; i++) {
+//     row += "*";
+//   }
+//   for (var k = 0; k < width; k++) {
+//     if (k === 0 || k === width - 1) {
+//       nextRow += "*";
+//     }
+//     else
+//       nextRow += " ";
+//   }
+//   for (var j = 0; j < height; j++) {
+//     if (j === 0 || j === height - 1) {
+//       console.log(row);
+//     }
+//     else {
 //       console.log(nextRow);
 //     }
 //   }
