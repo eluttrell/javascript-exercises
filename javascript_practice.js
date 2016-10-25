@@ -48,7 +48,7 @@
 
 // Tip Calculator 2
 
-// var tipAmount = function(amount, service) {
+// var totalAmount = function(amount, service) {
 //   if (service === 'good') {
 //     bill = amount * 1.2;
 //     return bill.toFixed(2);
@@ -64,3 +64,18 @@
 // };
 
 // Tip Calculator 3
+
+var splitAmount = function(amount, service, partyof) {
+  if (service === 'good') {
+    bill = (amount * 1.2) / partyof;
+    return "$" + bill.toFixed(2);
+  }
+  else if (service === 'fair') {
+    bill = (amount * 1.15) / partyof;
+    return "$" + bill.toFixed(2);
+  }
+  else if (service === 'bad') {
+    bill = (amount * 1.1) / partyof;
+    return "$" + bill.toFixed(2);
+  }
+};
