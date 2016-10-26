@@ -234,14 +234,91 @@
 
 // ===========================================================
 
+// Caesar Cipher
+
+// Version 1
 var cipher = function(string, offset) {
-  var ceasar = '';
+  var caesar = '';
   for (var i = 0; i < string.length; i++) {
-    var x = string[i];
-    var y = x.charCodeAt() + offset;
-    ceasar += String.fromCharCode(y);
+    var x = string[i].charCodeAt();
+    if ((x >= 65) && (x <= 90)) {
+      caesar += String.fromCharCode(((x - 65 + offset) % 26) + 65);
+    }
+    else if ((x >= 97) && (x <= 122)) {
+      caesar += String.fromCharCode(((x - 97 + offset) % 26) + 97);
+    }
+    else {
+      caesar += " ";
+    }
   }
-  console.log(ceasar);
+  console.log(caesar);
 };
 
-cipher('hello world', 1);
+cipher('Genius without education is like silver in the mine', 13);
+
+// Test(Not my code, found on github):
+// var caesarShift = function(str, amount) {
+//
+// 	// Wrap the amount
+// 	if (amount < 0)
+// 		return caesarShift(str, amount + 26);
+//
+// 	// Make an output variable
+// 	var output = '';
+//
+// 	// Go through each character
+// 	for (var i = 0; i < str.length; i ++) {
+//
+// 		// Get the character we'll be appending
+// 		var c = str[i];
+//
+// 		// If it's a letter...
+// 		if (c.match(/[a-z]/i)) {
+//
+// 			// Get its code
+// 			var code = str.charCodeAt(i);
+//
+// 			// Uppercase letters
+// 			if ((code >= 65) && (code <= 90))
+// 				c = String.fromCharCode(((code - 65 + amount) % 26) + 65);
+//
+// 			// Lowercase letters
+// 			else if ((code >= 97) && (code <= 122))
+// 				c = String.fromCharCode(((code - 97 + amount) % 26) + 97);
+//
+// 		}
+//
+// 		// Append
+// 		output += c;
+//
+// 	}
+//
+// 	// All done!
+// 	console.log(output);
+//
+// };
+//
+// caesarShift('hello world', 1);
+
+// ===========================================================
+
+// Caesar Cipher 2: The Deciphering
+
+var decipher = function(string, offset) {
+  var deciphered = '';
+  for (var i = 0; i < string.length; i++) {
+    var x = string[i].charCodeAt();
+    if ((x >= 65) && (x <= 90)) {
+      deciphered += String.fromCharCode(((x - 65 + offset) % 26) + 65);
+    }
+    else if ((x >= 97) && (x <= 122)) {
+      deciphered += String.fromCharCode(((x - 97 + offset) % 26) + 97);
+    }
+    else {
+      deciphered += " ";
+    }
+  }
+  console.log(deciphered);
+};
+
+decipher('Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar', 13);
