@@ -237,24 +237,24 @@
 // Caesar Cipher
 
 // Version 1
-var cipher = function(string, offset) {
-  var caesar = '';
-  for (var i = 0; i < string.length; i++) {
-    var x = string[i].charCodeAt();
-    if ((x >= 65) && (x <= 90)) {
-      caesar += String.fromCharCode(((x - 65 + offset) % 26) + 65);
-    }
-    else if ((x >= 97) && (x <= 122)) {
-      caesar += String.fromCharCode(((x - 97 + offset) % 26) + 97);
-    }
-    else {
-      caesar += " ";
-    }
-  }
-  console.log(caesar);
-};
-
-cipher('Genius without education is like silver in the mine', 13);
+// var cipher = function(string, offset) {
+//   var caesar = '';
+//   for (var i = 0; i < string.length; i++) {
+//     var x = string[i].charCodeAt();
+//     if ((x >= 65) && (x <= 90)) {
+//       caesar += String.fromCharCode(((x - 65 + offset) % 26) + 65);
+//     }
+//     else if ((x >= 97) && (x <= 122)) {
+//       caesar += String.fromCharCode(((x - 97 + offset) % 26) + 97);
+//     }
+//     else {
+//       caesar += " ";
+//     }
+//   }
+//   console.log(caesar);
+// };
+//
+// cipher('Genius without education is like silver in the mine', 13);
 
 // Test(Not my code, found on github):
 // var caesarShift = function(str, amount) {
@@ -303,22 +303,59 @@ cipher('Genius without education is like silver in the mine', 13);
 // ===========================================================
 
 // Caesar Cipher 2: The Deciphering
+//
+// var decipher = function(string, offset) {
+//   var deciphered = '';
+//   for (var i = 0; i < string.length; i++) {
+//     var x = string[i].charCodeAt();
+//     if ((x >= 65) && (x <= 90)) {
+//       deciphered += String.fromCharCode(((x - 65 + offset) % 26) + 65);
+//     }
+//     else if ((x >= 97) && (x <= 122)) {
+//       deciphered += String.fromCharCode(((x - 97 + offset) % 26) + 97);
+//     }
+//     else {
+//       deciphered += " ";
+//     }
+//   }
+//   console.log(deciphered);
+// };
+//
+// decipher('Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar', 13);
 
-var decipher = function(string, offset) {
-  var deciphered = '';
+// ===========================================================
+
+// Leetspeak
+var leetspeak = function(string) {
+  var leet = '';
   for (var i = 0; i < string.length; i++) {
-    var x = string[i].charCodeAt();
-    if ((x >= 65) && (x <= 90)) {
-      deciphered += String.fromCharCode(((x - 65 + offset) % 26) + 65);
+    var x = string[i];
+    if (x === 'a' || x === 'A') {
+      leet += '4';
     }
-    else if ((x >= 97) && (x <= 122)) {
-      deciphered += String.fromCharCode(((x - 97 + offset) % 26) + 97);
+    else if (x === 'e' || x === 'E') {
+      leet += '3';
+    }
+    else if (x === 'g' || x === 'G') {
+      leet += '6';
+    }
+    else if (x === 'i' || x === 'I') {
+      leet += '1';
+    }
+    else if (x === 'o' || x === 'O') {
+      leet += '0';
+    }
+    else if (x === 's' || x === 'S') {
+      leet += '5';
+    }
+    else if (x === 't' || x === 'T') {
+      leet += '7';
     }
     else {
-      deciphered += " ";
+      leet += x;
     }
   }
-  console.log(deciphered);
+  console.log(leet);
 };
 
-decipher('Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar', 13);
+leetspeak("This is so leet I can't believe it!");
