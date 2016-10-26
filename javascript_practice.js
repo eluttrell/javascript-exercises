@@ -219,14 +219,29 @@
 //     var y = num / i;
 //     if (Number.isInteger(y) === true) {
 //       factors1 += String(y);
-//       allFactors += factors1 + "  ";
+//       allFactors.push(factors1);
 //       factors2 += String(i);
-//       allFactors += factors2 + "  ";
+//       allFactors.push(factors2);
 //     }
 //   }
 //   console.log(allFactors);
 // };
 //
-// factors(25);
+// factors(100);
 
 // Version 2:
+// ...
+
+// ===========================================================
+
+var cipher = function(string, offset) {
+  var ceasar = '';
+  for (var i = 0; i < string.length; i++) {
+    var x = string[i];
+    var y = x.charCodeAt() + offset;
+    ceasar += String.fromCharCode(y);
+  }
+  console.log(ceasar);
+};
+
+cipher('hello world', 1);
